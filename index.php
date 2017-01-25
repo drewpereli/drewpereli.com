@@ -32,19 +32,23 @@
 					<ul>
 						<?php 
 						$urls = array(
+							"http://statestreetbrats.com/",
 							"http://www.thelandingmadison.com/",
 							"http://skin608.com/",
 							"http://www.jcwtaxaccounting.com/",
 							"http://mitlinq.org/",
 							"http://hackingchronicdisease.org/",
+							"http://www.woodjoiners.com/",
 						);
 
 						$siteNames = array(
+							"State Street Brats",
 							"The Landing",
 							"Skin608",
 							"JCW Tax &amp; Accounting",
 							"MIT Linq",
 							"Hacking Chronic Disease",
+							"Wood Joiners",
 						);
 						?>
 
