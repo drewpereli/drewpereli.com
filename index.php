@@ -16,51 +16,49 @@
 	</head>
 	<body>
 		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-6 col-xs-offset-3">
-					Because my clients' websites will always take priority over my own, this site is still under construction!
+			<div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+				<div class="row">
+						Because my clients' websites will always take priority over my own, this site is still under construction!
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-6 col-xs-offset-3">
-					If you'd like some help building your website, feel free to get in touch with me at drewpereli@gmail.com
+				<div class="row">
+						If you'd like some help building your website, feel free to get in touch with me at drewpereli@gmail.com
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-6 col-xs-offset-3">
-					Here are some of the websites I've worked on
-					<ul>
-						<?php 
-						$urls = array(
-							"http://statestreetbrats.com/",
-							"http://www.thelandingmadison.com/",
-							"http://skin608.com/",
-							"http://www.jcwtaxaccounting.com/",
-							"http://mitlinq.org/",
-							"http://hackingchronicdisease.org/",
-							"http://www.woodjoiners.com/",
-						);
+				<div class="row">
+						Here are some of the websites I've worked on
+						<ul>
+							<?php 
+							$urls = array(
+								"http://statestreetbrats.com/",
+								"http://silvercloudsociety.com/",
+								"http://www.thelandingmadison.com/",
+								"http://skin608.com/",
+								"http://www.jcwtaxaccounting.com/",
+								"http://mitlinq.org/",
+								"http://hackingchronicdisease.org/",
+								"http://www.woodjoiners.com/",
+							);
 
-						$siteNames = array(
-							"State Street Brats",
-							"The Landing",
-							"Skin608",
-							"JCW Tax &amp; Accounting",
-							"MIT Linq",
-							"Hacking Chronic Disease",
-							"Wood Joiners",
-						);
-						?>
+							$siteNames = array(
+								"State Street Brats",
+								"Silver Cloud Society",
+								"The Landing",
+								"Skin608",
+								"JCW Tax &amp; Accounting",
+								"MIT Linq",
+								"Hacking Chronic Disease",
+								"Wood Joiners",
+							);
+							?>
 
-						<?php for ($i = 0 ; $i < sizeof($urls) ; $i++) : ?>
-							<li>
-								<a 	target="_blank"
-									href="<?=$urls[$i];?>">
-									<?=$siteNames[$i];?>
-								</a>
-							</li>
-						<?php endfor ?>
-					</ul>
+							<?php for ($i = 0 ; $i < sizeof($urls) ; $i++) : ?>
+								<li>
+									<a 	target="_blank"
+										href="<?=$urls[$i];?>">
+										<?=$siteNames[$i];?>
+									</a>
+								</li>
+							<?php endfor ?>
+						</ul>
 				</div>
 			</div>
 		</div>
