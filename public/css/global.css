@@ -1,0 +1,39 @@
+body {
+  background-color: #111;
+}
+
+.content {
+  font-size: 1.7em;
+  margin-top: 3em;
+  color: #999; 
+}
+.content .row {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    }
+h2 {
+  margin-top: -.5em;
+}
+
+.fade-in {
+  opacity: 0;
+}
+
+@media (min-width: 993px){
+  body {
+    background-image: url("/img/background.jpg");
+    background-size: 100%;
+  }
+}
+
+@media (max-width: 992px)
+{
+	.content{
+		font-size: 3em;
+	}
+  h2 {
+    font-size: 2em;
+  }
+}
+
+/*# sourceMappingURL=global.css.map */

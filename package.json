@@ -1,0 +1,19 @@
+{
+  "name": "pereliwebworks.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "pug": "^2.0.0-beta11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/drewpereli/drewpereli.com"
+  },
+  "author": "",
+  "license": "ISC"
+}

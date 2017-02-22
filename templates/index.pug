@@ -1,0 +1,66 @@
+doctype html
+html(lang="en")
+	head
+		title Pereli Web Works
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+
+		<!-- Optional theme -->
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous")
+
+		<!-- Latest compiled and minified JavaScript -->
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
+
+		link(href="css/global.css" type="text/css" rel="stylesheet")
+		script.
+			var fadeDuration = 1000;
+			$(() => {
+				setTimeout(() => {
+					$(".fade-in-1").animate({opacity: 1}, fadeDuration, "swing", () => {
+					$(".fade-in-2").animate({opacity: 1}, fadeDuration, "swing", () =>{
+					$(".fade-in-3").animate({opacity: 1}, fadeDuration);
+					});
+					});
+				}, 1300);
+			});
+	body
+		.container-fluid
+			.col-md-6.col-md-offset-3.col-xs-10.col-xs-offset-1.content
+				.row: h2.fade-in.fade-in-1.
+					Welcome to Pereli Web Works
+				.fade-in.fade-in-2
+					.row.
+						Because my clients' websites will always take priority over my own, this site is still under construction!
+					.row.
+						If you'd like some help building your website, feel free to get in touch with me at pereliwebworks@gmail.com.
+				.row.fade-in.fade-in-3 Here are some of the websites I've worked on.
+					ul
+						-
+							var sites = [
+								{name: "State Street Brats",
+								url: "http://statestreetbrats.com/"},
+								{name: "Silver Cloud Society",
+								url: "http://silvercloudsociety.com/"},
+								{name: "The Landing",
+								url: "http://www.thelandingmadison.com/"},
+								{name: "Skin608",
+								url: "http://skin608.com/"},
+								{name: "JCW Tax & Accounting",
+								url: "http://www.jcwtaxaccounting.com/"},
+								{name: "MIT Linq",
+								url: "http://mitlinq.org/"},
+								{name: "Hacking Chronic Disease",
+								url: "http://hackingchronicdisease.org/"}
+							]
+						each site in sites
+							li: a(href=site.url, target="_blank") #{site.name}
+
+
+
+
+
+
+
+
+
+
