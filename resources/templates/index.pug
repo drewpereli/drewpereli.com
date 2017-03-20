@@ -35,29 +35,24 @@ html(lang="en")
 						If you'd like some help building your website, feel free to get in touch with me at pereliwebworks@gmail.com.
 				.row.fade-in.fade-in-3 Here are some of the websites I've worked on.
 					ul
-						-
-							var sites = [
-								{name: "State Street Brats",
-								url: "http://statestreetbrats.com/"},
-								{name: "Silver Cloud Society",
-								url: "http://silvercloudsociety.com/"},
-								{name: "Paw Friendly Cat Furniture",
-								url: "http://pawfriendlyfurniture.com/"},
-								{name: "The Landing",
-								url: "http://www.thelandingmadison.com/"},
-								{name: "Skin608",
-								url: "http://skin608.com/"},
-								{name: "JCW Tax & Accounting",
-								url: "http://www.jcwtaxaccounting.com/"},
-								{name: "MIT Linq",
-								url: "http://mitlinq.org/"},
-								{name: "Hacking Chronic Disease",
-								url: "http://hackingchronicdisease.org/"},
-								{name: "Clarity Advocacy",
-								url: "http://clarityadvocacy.com"}
-							]
-						each site in sites
-							li: a(href=site.url, target="_blank") #{site.name}
+						li: a(href="http://statestreetbrats.com/", target="_blank").
+								State Street Brats
+						li: a(href="http://silvercloudsociety.com/", target="_blank").
+								Silver Cloud Society
+						li: a(href="http://pawfriendlyfurniture.com/", target="_blank").
+								Paw Friendly Cat Furniture
+						li: a(href="http://www.thelandingmadison.com/", target="_blank").
+								The Landing
+						li: a(href="http://skin608.com/", target="_blank").
+								Skin608
+						li: a(href="http://www.jcwtaxaccounting.com/", target="_blank").
+								JCW Tax & Accounting
+						li: a(href="http://mitlinq.org/", target="_blank").
+								MIT Linq
+						li: a(href="http://hackingchronicdisease.org/", target="_blank").
+								Hacking Chronic Disease
+						li: a(href="http://clarityadvocacy.com", target="_blank").
+								Clarity Advocacy
 
 
 
